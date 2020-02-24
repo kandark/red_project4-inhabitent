@@ -3,8 +3,7 @@
 
 <div class="image-about">
 
-    <?php echo get_home_url();?><img style="width:100%; height: 400px;" src="<?php echo get_stylesheet_directory_uri();?>/images/about-hero.jpg;?>">
-<h1>About</h1>
+    
 </div>
 
 
