@@ -2,9 +2,9 @@
 width: 100%;
 height: 500px; 
 }
-.menu a{
-    color: white;
-}
+// .menu a{
+//     color:
+// }
 
  .banner-logo{
    
@@ -40,25 +40,30 @@ footer{
     justify-content: space-around;
 }
 .menu{
-    
-    color:white;
-    margin-top: -30px;
-    justify-content: end;    
-    display: flex;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+
+
+
 
 
 }
-.menu li{
+.menu a{
+    color: rgb(0, 110, 86);
+    text-decoration: none;
     
+}
+.menu li{
     
     margin: 0px 20px  0px 10px;
     text-transform: uppercase;
     font-size: 20px;
-    color: white;
+
+    
+    
 }
-.menu a{
-    text-decoration: none;
-}
+
 .main-menu  {
     
   display: -webkit-box;
@@ -78,38 +83,31 @@ footer{
         }
    .search-form{
        margin-top: -25px;
-       display:none;
-   }
-   .home-logo{
-       width: 100%;
-       height: 600px;
-       background-position: left,center 50px,center;
-       background-repeat: repeat,no-repeat,repeat;
-       background-size: cover,contain,cover;
-       margin-top: -65px;
-       background-image: url("./images/home-hero.jpg");
-   }
-    .home-hero-logo{
-        display: flex;
-        align-items: center;
-justify-content: center;
-// position: relative;
-
+       
  }
- .image-about{
-    
+ .home-hero img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
     height: 600px;
-    background-position: left,center 50px,center;
-    background-repeat: repeat,no-repeat,repeat;
-    background-size: cover,contain,cover;
-    margin-top: -65px;
-    background-size: 100%;
-    background-image: url("./images/about-hero.jpg");
-// }
-//  .image-about{
-//      display: flex;
-//      align-items: center;
-// justify-content: center;
-// // .home-hero-logo img{
-//     margin-top: 15%;
+
+
+    
+    
+    
 }
+
+header{
+    position: fixed;
+    width:100%;
+}
+.home-hero-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-hero-logo img{
+    margin-top: -600px;
+}
+ 

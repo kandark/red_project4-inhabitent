@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="home-logo">
-  <div class="home-hero-logo">  
-<img  src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
-</div>
-</div>
+
 
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
