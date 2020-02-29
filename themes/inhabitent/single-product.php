@@ -5,17 +5,19 @@
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail();?>
 
-    <span class="price">
-    <?php echo '$' . get_field('price');?>
-    </span>
-    <h3><?php the_permalink();?></h3>
+    <section class="single-product-page">
+        <?php the_post_thumbnail('large');?>
+        <div class="single-product-info-div">
+            <h2> <?php strtoupper( the_title()); ?></h2>
+            <p class="price-text" ><?php echo "$" . get_field('price');?></p> 
+            <?php the_content(); ?>
+            <div><button class="social-button"><i class="fab fa-facebook-f"></i> LIKE </button>
+              <button class="social-button"><i class="fab fa-pinterest"></i> PIN </button>
+               <button class="social-button"> <i class="fab fa-twitter"></i> TWEET </button>
+        </div>
+    </section>
     
-
-    <?php the_content(); ?>
     
     <!-- Loop ends -->
     <?php endwhile;?>

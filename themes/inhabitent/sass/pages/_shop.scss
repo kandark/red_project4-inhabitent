@@ -1,0 +1,72 @@
+.product-type-links{
+
+font-size: 30px;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 30px;
+padding: 10px;
+text-transform: uppercase;
+}
+.taxonomy-products-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    
+}
+.product-type-links a{
+    margin: 10px;
+    border: solid red;
+}
+.archive-products img{
+    width: 100%;
+    height: 259px;
+    border: green solid;
+}
+.inhabitent-principal{
+  
+    width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    img{
+        
+          width: 100%;
+          height: 250px;
+          margin:0;
+          
+      }
+     
+}
+.inhabitent-adventure{
+  
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    img{
+        
+          width: 100%;
+          height: 250px;
+          margin:0;
+          
+      }
+     
+}
+.inhabitent-img{
+    border: solid green;
+    background-color: red;
+    margin: 5px;
+    width: 90%;
+    
+}
+
+.inhabitent-img2{
+    border: solid blue;
+    background-color:yellow;
+    width: 90%;
+    
+}
+.inhabitent-img2 *{
+    grid:1/3;
+}

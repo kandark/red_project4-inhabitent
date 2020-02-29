@@ -10,7 +10,7 @@
 
         <h2><?php the_title();?></h2>
     </div>
-    <h2><?php the_title(); ?></h2>
+    <h2 id="title">OUR STORY</h2>
     <?php the_content(); ?>
     
     <!-- Loop ends -->
