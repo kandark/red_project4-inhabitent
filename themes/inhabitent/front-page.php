@@ -29,7 +29,7 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-<h1>Shop Stuff</h1>
+<h1 class="shop-title">Shop Stuff</h1>
 <div class="terms">
 <?php
 $terms=get_terms(array(
@@ -56,7 +56,7 @@ foreach($terms as $term) :
 
 <?php endforeach;?>    
  </div>
-<h1>Inhabitent journal</h1>
+<h1 class="shop-title">Inhabitent journal</h1>
 <!-- custom post loop starts -->
 <div class="inhabitent-principal">
 <?php
@@ -73,13 +73,15 @@ foreach($terms as $term) :
   
 <div class="inhabitent-img">
     <?php the_post_thumbnail();?>
-    <?php echo the_date() . ' / ';?>
+  
+     <div class="title-van">
+           <?php echo the_date() . ' / ';?>
     <?php echo comments_number();?>
-    <br>
+   
     <h1><?php the_title();?></h1>
-    <br>
+</div>
     
-    <a href="<?php echo get_permalink();?>"><button>Read entry</button></a>
+    <a href="<?php echo get_permalink();?>"><button>Read entry</button class="btn"></a>
 </div>
 
     
@@ -87,34 +89,34 @@ foreach($terms as $term) :
 </div>
 
 
-<h1>Latest adventure</h1>
+<h1 class="shop-title">Latest adventures</h1>
 <!-- custom post loop starts -->
-<div class="inhabitent-adventure">
+<div class="latest-adventures">
 <?php
-   $args = array( 'post_type' => 'post', 
-   'adventures' => 'ASC',
+   $args = array( 'post_type' => 'adventure', 
+   'order' => 'ASC',
 'numberposts'=>4
 );
-   $product_posts = get_posts( $args ); // returns an array of posts
+   $adventure_posts = get_posts( $args ); // returns an array of posts
 ?>
 
-<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-   <!-- <?php the_title() ?>
-   <?php the_post_thumbnail()?> -->
-  
-<div class="inhabitent-img2">
+<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+ 
+<div class="latest-adventure-posts">
     <?php the_post_thumbnail();?>
 
-    <br>
-    <h1><?php the_title();?></h1>
-    <br>
-    
-    <a href="<?php echo get_permalink();?>"><button>Read more</button></a>
-</div>
 
+    <p><?php the_title();?></p>
+    <div class="gulp">
+    <a href="<?php echo get_permalink();?>"><button>Read more</button></a>
+    </div>
+ </div>
+ 
     
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
-
+<section class="btn-adventure">
+    <a href="<?php echo get_post_type_archive_link('adventure') ;?>"><button>More adventures</button></a>
+    </section>
 
 <?php get_footer();?>

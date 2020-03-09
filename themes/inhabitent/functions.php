@@ -5,7 +5,7 @@ function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
 
-
+wp_enqueue_script('inhabitent-search-toggle',get_template_directory_uri() .'/build/js/search-toggle.js',array('jquery'),NULL,true);
 
 }
 
@@ -54,7 +54,7 @@ add_action('widgets_init','inhabitent_widgets');
                     'all_items' => 'All Products',
                     'singular_name' => 'Product'
                 ),
-                'menu_icon' => 'dashicons-store'
+                'menu_icon' => 'dashicons-camera'
             ));
         
 
@@ -99,14 +99,94 @@ add_action('widgets_init','inhabitent_widgets');
 
     );
 
+    
+
     register_taxonomy( 'product-type', array( 'product' ), $args );
 
 }
 
 
-
-
     add_action('init','inhabitent_post_types');
+
+    function inhabitent_adventure_types() {
+        register_post_type( 'adventure', array(
+            'has_archive' => true,
+            'show_in_rest' => true,
+            'public' => true,
+            'supports' => array ('title', 'editor', 'thumbnail'),
+            'labels' => array(
+                'name' => 'Adventures',
+                'add_new_item' => 'Add New Adventure',
+                'edit_item' => 'Edit Adventure',
+                'all_items' => 'All Adventures',
+                'singular_name' => 'Adventure'
+            ),
+            'menu_icon' => 'dashicons-store' //find a way to change this to look cool
+        ));
+    
+
+
+
+
+
+// Register Custom Taxonomy
+
+
+
+$labels = array(
+
+    'name'                       => _x('Adventure Types','Taxonomy General Name', 'Adventure Type' ),
+    'singular_name'              => _x( 'Adventure type', 'Taxonomy Singular Name', 'Adventure Type' ),
+    'menu_name'                  => __( 'Adventure type', 'Adventure Type' ),
+    'all_items'                  => __( 'All Items', 'Adventure Type'),
+    'parent_item'                => __( 'Parent Item', 'Adventure Type' ),
+    'parent_item_colon'          => __( 'Parent Item:', 'Adventure Type' ),
+    'new_item_name'              => __( 'New Item Name', 'Adventure Type' ),
+    'add_new_item'               => __( 'Add New Item', 'Adventure Type' ),
+    'edit_item'                  => __( 'Edit Item', 'Adventure Type' ),
+    'update_item'                => __( 'Update Item', 'Adventure Type' ),
+    'view_item'                  => __( 'View Item', 'Adventure Type' ),
+    'separate_items_with_commas' => __( 'Separate items with commas', 'Adventure Type' ),
+    'add_or_remove_items'        => __( 'Add or remove items', 'Adventure Type'),
+    'choose_from_most_used'      => __( 'Choose from the most used', 'Adventure Type' ),
+    'popular_items'              => __( 'Popular Items', 'Adventure Type' ),
+    'search_items'               => __( 'Search Items', 'Adventure Type' ),
+    'not_found'                  => __( 'Not Found', 'Adventure Type' ),
+
+);
+
+$args = array(
+    'labels'                     => $labels,
+    'hierarchical'               => true,
+    'public'                     => true,
+    'show_ui'                    => true,
+    'show_admin_column'          => true,
+    'show_in_nav_menus'          => true,
+    'show_tagcloud'              => true,
+
+);
+
+
+
+register_taxonomy( 'adventure-type', array( 'adventure' ), $args );
+
+}
+
+
+add_action('init','inhabitent_adventure_types');
+
+
+
+
+
+function inhabitent_adjust_product($query) {
+    if(!is_admin() && is_post_type_archive('product')) :
+    $query->set('order', 'ASC');
+    $query->set('orderby', 'title');
+    $query->set('posts_per_page', '16');
+    endif; 
+}
+add_action('pre_get_posts', 'inhabitent_adjust_product');
 
 add_action( 'wp_enqueue_scripts', 'tthq_add_custom_fa_css' );
 

@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 
-<h1>Shop stuff</h1>
+
+<h1 class="shop-title2">Shop stuff</h1>
+<hr class="dashed">
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
     'hide_empty' => false,
 ));?>
 
-<div class="product-type-links"> 
+<div class="product-types"> 
 
 <?php
 
@@ -15,6 +17,7 @@ foreach ($terms as $term):
 
 $phrase  = $term->slug;
  ;?>
+ 
 
 <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"><?php echo $phrase;?></a>
 
