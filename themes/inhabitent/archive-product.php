@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-
+<hr>
 
 <h1 class="shop-title2">Shop stuff</h1>
-<hr class="dashed">
+
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -24,7 +24,7 @@ $phrase  = $term->slug;
 <?php endforeach;?>
 
 </div>
-
+<hr class="dashed">
 
 
 <section class= "taxonomy-products-grid">
@@ -36,23 +36,23 @@ $phrase  = $term->slug;
         the_post(); ?>
 
     <figure class="archive-products">
-
     <a href="<?php echo get_permalink();?>">
 
      <?php the_post_thumbnail('large');?>
-
+    
     <div class="grey-space"></div>
 
     <figcaption>
-        <hr class="dotted">
+        
     
     
+<div class="prducts-link">
         <p><?php the_title();?></p>
         <p><?php echo " $" . get_field('price');?></p>
     </div>
     
     </a>
-        
+    </div>   
         
     </figcaption>
    
