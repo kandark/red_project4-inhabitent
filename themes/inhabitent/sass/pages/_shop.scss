@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .shop-title2{
     display: flex;
     align-items: center;
@@ -121,3 +122,128 @@
 
 
 
+=======
+.shop-title2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.dashed{
+    border:1px dashed;
+}
+.product-types{
+
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    }
+   .product-types a{
+       margin: 10px;
+   } 
+    
+.taxonomy-products-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    
+    
+}
+.product-type-links a{
+    margin: 10px;
+    text-decoration: none;
+    
+
+}
+.archive-products{
+    
+    margin: 5px;
+}
+.archive-products img{
+    width: 100%;
+    height: 259px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+
+.journal-posts{
+    width: 100%;
+  
+ }
+ .shop-title{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     text-transform: uppercase;
+     margin: 10px;
+
+ }
+ 
+ 
+
+
+ 
+.tags{
+    display: flex;
+    
+
+}
+.tags p{
+    margin: 5px;
+    
+}
+
+/**********start -  single productt styles *********/
+.single-product-page {
+    display: flex;
+ 
+}
+.single-product-page img{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+.single-product-info{
+    
+    display: flex;
+
+    
+    flex-direction: column;
+    p{
+        font-size: 16px;
+        font-family: 'Merriweather Web';
+    }
+    p:nth-child(3){
+        width: 50%;
+        font-family: 'Merriweather Web';
+    }
+    
+    h2{
+        text-transform: uppercase;
+        color: #d99054;
+        margin: 5px;
+  
+        font-family: 'Merriweather Web light';
+    }
+    
+}
+.photo-text img{
+    margin-top: 50px;
+}
+
+
+
+
+
+>>>>>>> a52e190a3a0aa362037a38dff58674d54990556c
