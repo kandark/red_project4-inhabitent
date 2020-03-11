@@ -1,17 +1,39 @@
 <?php get_header(); ?>
 
+<hr>
+
+<div class="journal-posts-grid">
+
+<section class="journal-posts">
+
+<?php query_posts(array(
+  'posts_per_page'=>5
+
+));?>
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-    
 
-    <?php the_content(); ?>
-    
+    <div class="photo-text">
+    <h2><?php the_title(); ?></h2>
+    <div class="bottom-photo-text">
+    <h6><?php echo the_date() . '/';?><?php echo comments_number() . '/by ' . get_the_author();?></h6> 
+    </div>
+    <?php the_post_thumbnail();?>
+
+    </div>
+
+
+    <p><?php echo wp_trim_words(get_the_content(), 20, ' [...]');?></p>
+
+    <section>
+    <a href="<?php echo get_permalink() ;?>"><button>Read more <i class="fas fa-long-arrow-alt-right"></i></button></a>
+    </section>
+
+   
     <!-- Loop ends -->
     <?php endwhile;?>
 
@@ -21,5 +43,12 @@
         <p>No posts found</p>
 <?php endif;?>
 
-    
+</section>
+
+<div class="sidebar">
+<?php get_sidebar();?>
+</div>
+
+</div>
+
 <?php get_footer();?>

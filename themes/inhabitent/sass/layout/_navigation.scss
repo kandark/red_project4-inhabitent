@@ -1,0 +1,41 @@
+ 
+  .home-hero-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-hero-logo img{
+    margin-top: -600px;
+}
+
+
+.stuff {
+  height: auto;
+  width: 100%;
+  height: 250px;
+  border: solid #a1a1a1;
+  border-top: solid #a1a1a1;
+  
+  margin: 20px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+} 
+.stuff img{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    padding: 15px;
+
+  
+}
+.terms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

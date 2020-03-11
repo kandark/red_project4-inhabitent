@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<hr>
 
 <?php if( have_posts() ) :
 
@@ -8,8 +9,8 @@
 
     <section class="single-product-page">
         <?php the_post_thumbnail('large');?>
-        <div class="single-product-info-div">
-            <h2> <?php strtoupper( the_title()); ?></h2>
+        <div class="single-product-info">
+            <h2> <?php strtoupper( the_title()); ?></h2> 
             <p class="price-text" ><?php echo "$" . get_field('price');?></p> 
             <?php the_content(); ?>
             <div><button class="social-button"><i class="fab fa-facebook-f"></i> LIKE </button>

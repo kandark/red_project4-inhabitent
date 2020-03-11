@@ -8,15 +8,22 @@
 </head>
 <body <?php body_class();?>>
 <header>
-<nav class="navigation">
-<a href="<?php echo get_home_url();?>"><img style="width: 90px; height: 40px;" src="<?php echo get_stylesheet_directory_uri(); ?>
-    /images/logos/inhabitent-logo-tent.svg;?>" alt="Inhabitents logo"></a>
+<nav class="<?php echo is_page(array('About', 'Home')) ? 'menu' : 'menu2' ;?>">
 
+            <a href="http://localhost:3000/inhabitent/">
+            <img src="<?php echo is_page(array('About', 'Home')) ?  get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :
+         get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;?> " >        
+        </a>
 
-<?php wp_nav_menu(array('theme_location'=>'main'));?>
-<?php echo get_search_form();?>
+            <!-- Menu -->
+        <?php wp_nav_menu(array(
+        'theme_location' => 'main'
+        )) ;?>  
+        </nav>
 
-</nav>
+        <!-- Search goes here  -->
+     <?php get_search_form();?>
 </header>
+
 
 

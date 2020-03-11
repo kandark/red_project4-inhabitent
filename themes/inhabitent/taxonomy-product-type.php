@@ -1,26 +1,64 @@
 <?php get_header(); ?>
 
+<div class="product-type-header">
+<div>
+<?php
+
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+
+$phrase  = $term->slug;
+$healthy = ("STUFF");
+$yummy   = ("");
+$output = str_replace($healthy, $yummy, $phrase);?>
+
+<h1><?php echo $output;?></h1>
+<?php echo category_description($term->term_id);?>
+</div>
+</div>
+
+
+
+<section class="taxonomy-products-grid">
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail();?>
-    <h3><?php the_permalink();?></h3>
-    
 
-    <?php the_content(); ?>
+<figure class="archive-products">
+    
+    <a href="<?php echo get_permalink();?>">
+
+        <?php the_post_thumbnail('large');?>
+
+        <div class="grey-space"></div>
+
+        <figcaption>
+        
+        <div>
+            <p><?php the_title();?></p>
+            <p><?php echo " $" . get_field('price');?></p>
+        </div>
+    
+    </a>
+
+        </figcaption>
+   
+</figure>  
     
     <!-- Loop ends -->
     <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
 
-    
+</section>
+
+<a class="shop-button" href="<?php echo get_home_url() . '/products/';?>">
+  
+</a>
+
 <?php get_footer();?>
