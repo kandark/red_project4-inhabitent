@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php get_header(); ?>
 
 <section>
@@ -34,7 +34,7 @@
 <?php endif;?>
 </section>
     
-=======
+
 <?php get_header(); ?>
 
 <section>
@@ -70,5 +70,4 @@
 <?php endif;?>
 </section>
     
->>>>>>> a52e190a3a0aa362037a38dff58674d54990556c
 <?php get_footer();?>

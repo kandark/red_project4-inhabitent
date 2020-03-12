@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*************journal page style ***********/
 .journal-posts {
     grid-column-start: 1;
@@ -142,11 +142,7 @@ display: flex;
 justify-content: space-between;
  
 }
-.sidebar{
-  margin-right: 80px;
-  width: 300px;
- 
-}
+
 /**********Adventure archive **********/
 
 .adventures-title h1{
@@ -155,58 +151,6 @@ font-size: 16px;
 text-transform: uppercase;
 
 }
-.find-us-map{
-  border-right:1px solid #e1e1e1;
-  width: 700px;
- 
-}
-.find-us-posts{
-display:flex;
-justify-content: space-between;
-h1{
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 10px;
-}    
-h2{
-      font-size: 20px;
-      text-transform: uppercase;
-      font-family:Merriweather Web bold;
-      
-    }
-    p{
-      font-size: 16px;
-
-    }
-    form{
-      input{
-        background-color: gainsboro;
-        height: 30px;
-        width: 300px;
-      }
-      textarea{
-        
-        background-color: gainsboro;
-      }
-    }
-}
-.sidebar{
-  .sidebar-hours{
-    background-color: gold;
-    span{
-      font-weight: bold;
-      
-    }
-  }
-  .sidebar-archive{
-    
-   
-    p{
-      color: #248a83;
-      font-family:Merriweather Web;
-    }
-  }
-=======
 /*************journal page style ***********/
 .journal-posts {
     grid-column-start: 1;
@@ -350,11 +294,7 @@ display: flex;
 justify-content: space-between;
  
 }
-.sidebar{
-  margin-right: 80px;
-  width: 300px;
- 
-}
+
 /**********Adventure archive **********/
 
 .adventures-title h1{
@@ -363,59 +303,8 @@ font-size: 16px;
 text-transform: uppercase;
 
 }
-.find-us-map{
-  border-right:1px solid #e1e1e1;
-  width: 700px;
- 
-}
-.find-us-posts{
-display:flex;
-justify-content: space-between;
-h1{
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 10px;
-}    
-h2{
-      font-size: 20px;
-      text-transform: uppercase;
-      font-family:Merriweather Web bold;
-      
-    }
-    p{
-      font-size: 16px;
 
-    }
-    form{
-      input{
-        background-color: gainsboro;
-        height: 30px;
-        width: 300px;
-      }
-      textarea{
-        
-        background-color: gainsboro;
-      }
-    }
-}
-.sidebar{
-  .sidebar-hours{
-    background-color: gold;
-    span{
-      font-weight: bold;
-      
-    }
-  }
-  .sidebar-archive{
-    
-   
-    p{
-      color: #248a83;
-      font-family:Merriweather Web;
-    }
-  }
-}
 .journal-posts{
   border: 1px solid red;
->>>>>>> a52e190a3a0aa362037a38dff58674d54990556c
+
 }

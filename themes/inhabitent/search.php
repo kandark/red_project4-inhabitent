@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header(); ?>
 <hr>
 <p>You searched for:"<?php echo get_home_url('/');?>"</p>

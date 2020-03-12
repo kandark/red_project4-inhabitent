@@ -1,0 +1,57 @@
+.sidebar{
+    margin-right: 200px;
+
+    width: 250px;
+    .widget-hours{
+        font-family: 'Novecento-bold';
+        margin-bottom: 10px;
+        margin-top: 10px;
+    } 
+    .contact-info{
+        color: #248A83;
+        margin: 5px 0 5px 5px;
+    }
+
+    p{
+        margin: 5px 0 5px 5px; 
+    }
+    .sidebar-hours span{
+        font-family: 'Merriweather-Bold';
+    }
+    .sidebar-archive p{
+        color: #248A83;
+    }
+}
+.find-us-posts{
+    display: flex;
+    justify-content: space-between;
+}
+.find-us-posts {
+    
+    margin: auto;
+    .find-us-map{
+        width: 75%;
+        border-right: 1px solid #e1e1e1;
+        margin-right: 5px;
+    }
+    h1{
+        font-size: 20px;
+        font-family: 'Novecento-bold';
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 20px;
+        font-family: 'Novecento-bold';
+        text-transform: uppercase;}
+    p{
+                 font-family: 'Merriweather';
+     }
+    
+}
+form { 
+    label{
+   
+font-size: 16px;
+font-family: 'Novecento';
+}
+}

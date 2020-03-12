@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
-<header>
+<header class="front-page">
 <nav class="<?php echo is_page(array('About', 'Home')) ? 'menu' : 'menu2' ;?>">
 
             <a href="http://localhost:3000/inhabitent/">

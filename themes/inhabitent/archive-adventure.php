@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php get_header(); ?>
 
 <div class="adventures-title">
