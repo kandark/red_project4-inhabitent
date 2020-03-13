@@ -481,13 +481,14 @@ body {
   background-position: bottom;
   width: 100%;
   height: 500px;
-  background-image: url("./images/about-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 39, 48, 0.52)), to(rgba(65, 63, 64, 0.73))), url("./images/about-hero.jpg");
+  background-image: linear-gradient(rgba(37, 39, 48, 0.52), rgba(65, 63, 64, 0.73)), url("./images/about-hero.jpg");
   margin-top: -105px; }
   .about h2 {
     font-size: 20px;
     text-align: center;
     line-height: 100vh;
-    font-family: 'Novecento'; }
+    font-family: 'Novecento-bold'; }
 
 .wp-block-image div {
   margin: 0px 60px; }
@@ -498,7 +499,7 @@ body {
   text-transform: uppercase; }
 
 #title {
-  font-size: 40px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,10 +507,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  font-family: 'Novecento'; }
+  font-family: 'Novecento-bold'; }
 
 #title-story {
-  font-size: 40px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,10 +518,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  font-family: 'Novecento'; }
+  font-family: 'Novecento-bold'; }
 
-.wp-block-image div {
+.about-image div {
   font-size: 20px; }
+
+.text-about {
+  margin: 20px;
+  font-size: 16px;
+  font-family: 'Merriweather-Light'; }
+
+.about-section {
+  width: 820px;
+  margin: auto; }
 
 .sidebar {
   margin-right: 200px;
@@ -769,263 +779,35 @@ form label {
     .error-page .error-page .sidebar {
       grid-column-start: 2; }
 
-/*************journal page style ***********/
-.journal-posts {
-  grid-column-start: 1;
-  padding-left: 50px;
-  border-right: 1px solid #e1e1e1;
-  padding-right: none;
-  width: 600px; }
-  .journal-posts img {
-    width: 200px;
-    height: 250px; }
-  .journal-posts .photo-text,
-  .journal-posts p,
-  .journal-posts .bottom-photo-text {
-    grid-column-start: 1; }
-  .journal-posts .photo-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    width: 730px; }
-    .journal-posts .photo-text img {
-      width: 730px;
-      height: 450px;
-      -o-object-fit: cover;
-         object-fit: cover; }
-    .journal-posts .photo-text h2 {
-      text-transform: uppercase;
-      word-wrap: break-word;
-      position: absolute;
-      top: 0;
-      color: white;
-      font-size: 20px;
-      background-color: #248a83;
-      padding: 20px;
-      margin-top: 30px; }
-    .journal-posts .photo-text .btn {
-      background-color: none; }
-    .journal-posts .photo-text .bottom-photo-text {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      width: 730px;
-      position: absolute;
-      bottom: 0; }
-      .journal-posts .photo-text .bottom-photo-text h6 {
-        color: white;
-        font-size: 15px;
-        background-color: #248a83;
-        padding: 5px 12px; }
-  .journal-posts button {
-    border-radius: 0;
-    padding: 8px 15px;
+.journal-posts-grid img {
+  width: 1200px;
+  margin: auto;
+  margin-top: -85px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px; }
+
+.journal-posts-grid .journal-posts {
+  width: 800px;
+  margin: auto; }
+  .journal-posts-grid .journal-posts h2 {
+    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Novecento-bold'; }
+  .journal-posts-grid .journal-posts .text-adventure h3 {
+    text-transform: uppercase;
+    font-family: 'Novecento'; }
+  .journal-posts-grid .journal-posts .text-adventure p {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    font-family: 'Merriweather-Light'; }
+  .journal-posts-grid .journal-posts .text-adventure button {
+    width: 90px;
+    height: 30px;
     background: none;
-    border: 1px solid black; }
-    .journal-posts button button i {
-      padding-right: 5px; }
-  .journal-posts p {
-    line-height: 1.75;
-    padding-bottom: 20px;
-    text-align: left;
-    padding-right: 100px; }
-  .journal-posts .tags {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 15px; }
-    .journal-posts .tags p {
-      text-transform: uppercase;
-      padding: 0;
-      padding-right: 30px;
-      font-family: 'Novecento';
-      font-size: 16px; }
-      .journal-posts .tags p span {
-        color: #607977; }
-  .journal-posts .comments-area {
-    padding-top: 20px; }
-  .journal-posts h2 {
-    font-size: 25px; }
-  .journal-posts .avatar.avatar-50.photo {
-    border-radius: 50%; }
-  .journal-posts .comment-reply-title {
-    font-size: 25px;
-    padding-top: 20px; }
-  .journal-posts .logged-in-as {
-    display: none; }
-  .journal-posts small {
-    display: none; }
-  .journal-posts .form-submit #submit {
-    font-size: 12px;
-    color: white;
-    background-color: #248a83;
-    padding: 0px 15px;
-    width: 10%; }
+    font-family: 'Novecento-bold'; }
 
-.product-type-header {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.journal-posts-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-/**********Adventure archive **********/
-.adventures-title h1 {
-  text-align: center;
-  font-size: 16px;
-  text-transform: uppercase; }
-
-/*************journal page style ***********/
-.journal-posts {
-  grid-column-start: 1;
-  padding-left: 50px;
-  border-right: 1px solid #e1e1e1;
-  padding-right: none;
-  width: 600px; }
-  .journal-posts img {
-    width: 200px;
-    height: 250px; }
-  .journal-posts .photo-text,
-  .journal-posts p,
-  .journal-posts .bottom-photo-text {
-    grid-column-start: 1; }
-  .journal-posts .photo-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    width: 730px; }
-    .journal-posts .photo-text img {
-      width: 730px;
-      height: 450px;
-      -o-object-fit: cover;
-         object-fit: cover; }
-    .journal-posts .photo-text h2 {
-      text-transform: uppercase;
-      word-wrap: break-word;
-      position: absolute;
-      top: 0;
-      color: white;
-      font-size: 20px;
-      background-color: #248a83;
-      padding: 20px;
-      margin-top: 30px; }
-    .journal-posts .photo-text .btn {
-      background-color: none; }
-    .journal-posts .photo-text .bottom-photo-text {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      width: 730px;
-      position: absolute;
-      bottom: 0; }
-      .journal-posts .photo-text .bottom-photo-text h6 {
-        color: white;
-        font-size: 15px;
-        background-color: #248a83;
-        padding: 5px 12px; }
-  .journal-posts button {
-    border-radius: 0;
-    padding: 8px 15px;
-    background: none;
-    border: 1px solid black; }
-    .journal-posts button button i {
-      padding-right: 5px; }
-  .journal-posts p {
-    line-height: 1.75;
-    padding-bottom: 20px;
-    text-align: left;
-    padding-right: 100px; }
-  .journal-posts .tags {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 15px; }
-    .journal-posts .tags p {
-      text-transform: uppercase;
-      padding: 0;
-      padding-right: 30px;
-      font-family: 'Novecento';
-      font-size: 16px; }
-      .journal-posts .tags p span {
-        color: #607977; }
-  .journal-posts .comments-area {
-    padding-top: 20px; }
-  .journal-posts h2 {
-    font-size: 25px; }
-  .journal-posts .avatar.avatar-50.photo {
-    border-radius: 50%; }
-  .journal-posts .comment-reply-title {
-    font-size: 25px;
-    padding-top: 20px; }
-  .journal-posts .logged-in-as {
-    display: none; }
-  .journal-posts small {
-    display: none; }
-  .journal-posts .form-submit #submit {
-    font-size: 12px;
-    color: white;
-    background-color: #248a83;
-    padding: 0px 15px;
-    width: 10%; }
-
-.product-type-header {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.journal-posts-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-/**********Adventure archive **********/
-.adventures-title h1 {
-  text-align: center;
-  font-size: 16px;
-  text-transform: uppercase; }
-
-.journal-posts {
-  border: 1px solid red; }
+.menu2 {
+  position: relative; }

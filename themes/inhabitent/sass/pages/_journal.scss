@@ -1,310 +1,46 @@
-
-/*************journal page style ***********/
-.journal-posts {
-    grid-column-start: 1;
-    padding-left: 50px;
-   border-right: 1px solid #e1e1e1;
-    // padding-top: 40px;
-    padding-right: none;
-    width: 600px;
-    img{
-      width: 200px;
-      height: 250px;
-      
-    }
-  
-    .photo-text,
-    p,
-    .bottom-photo-text {
-      grid-column-start: 1;
-    }
-  
-    .photo-text {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      width: 730px;
-  
-      img {
-        width: 730px;
-        height: 450px;
-        object-fit: cover;
-      }
-  
-      h2 {
-        text-transform: uppercase;
-        word-wrap: break-word;
-        position: absolute;
-        top: 0;
-        color: white;
-        font-size: 20px;
-        background-color: #248a83;
-        padding: 20px;
-        margin-top: 30px;
-      }
-      .btn{
-          background-color: none;
-      }
-  
-      .bottom-photo-text {
-        display: flex;
-        justify-content: flex-end;
-        width: 730px;
-        position: absolute;
-        bottom: 0;
-  
-        h6 {
-          color: white;
-          font-size: 15px;
-          background-color: #248a83;
-          padding: 5px 12px;
-        }
-      }
-    }
-  
-    button {
-      border-radius: 0;
-      padding: 8px 15px;
-      background: none;
-      border: 1px solid black;
-  
-      button i {
-        padding-right: 5px;
-      }
-    }
-    p {
-      line-height: 1.75;
-      padding-bottom: 20px;
-      text-align: left;
-      padding-right: 100px;
-    }
-  
-    .tags {
-      display: flex;
-      padding-bottom: 15px;
-  
-      p{
-        text-transform: uppercase;
-        padding: 0;
-        padding-right: 30px;
-        font-family: 'Novecento';
-        font-size: 16px;
-  
-        span {
-          color: #607977;
-        }
-      }
-    }
-  
-    .comments-area {
-      padding-top: 20px;
-    }
-  
-    h2 {
-      font-size: 25px;
-    }
-  
-    .avatar.avatar-50.photo {
-      border-radius: 50%;
-    }
-  
-    .comment-reply-title {
-      font-size: 25px;
-      padding-top: 20px;
-    }
-  
-    .logged-in-as {
-      display: none;
-    }
-  
-    small {
-      display: none;
-    }
-  
-    .form-submit #submit {
-      font-size: 12px;
-      color: white;
-      background-color: #248a83;
-      padding: 0px 15px;
-      width: 10%;
-    }
-  
-  }
-  .product-type-header{
-      margin-top: 30px;  
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  }
 .journal-posts-grid{
-display: flex;
-justify-content: space-between;
- 
-}
-
-/**********Adventure archive **********/
-
-.adventures-title h1{
-text-align: center;
-font-size: 16px;
-text-transform: uppercase;
-
-}
-/*************journal page style ***********/
-.journal-posts {
-    grid-column-start: 1;
-    padding-left: 50px;
-   border-right: 1px solid #e1e1e1;
-    // padding-top: 40px;
-    padding-right: none;
-    width: 600px;
-    img{
-      width: 200px;
-      height: 250px;
-      
-    }
-  
-    .photo-text,
-    p,
-    .bottom-photo-text {
-      grid-column-start: 1;
-    }
-  
-    .photo-text {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      width: 730px;
-  
-      img {
-        width: 730px;
-        height: 450px;
-        object-fit: cover;
-      }
-  
-      h2 {
-        text-transform: uppercase;
-        word-wrap: break-word;
-        position: absolute;
-        top: 0;
-        color: white;
-        font-size: 20px;
-        background-color: #248a83;
-        padding: 20px;
-        margin-top: 30px;
-      }
-      .btn{
-          background-color: none;
-      }
-  
-      .bottom-photo-text {
-        display: flex;
-        justify-content: flex-end;
-        width: 730px;
-        position: absolute;
-        bottom: 0;
-  
-        h6 {
-          color: white;
-          font-size: 15px;
-          background-color: #248a83;
-          padding: 5px 12px;
-        }
-      }
-    }
-  
-    button {
-      border-radius: 0;
-      padding: 8px 15px;
-      background: none;
-      border: 1px solid black;
-  
-      button i {
-        padding-right: 5px;
-      }
-    }
-    p {
-      line-height: 1.75;
-      padding-bottom: 20px;
-      text-align: left;
-      padding-right: 100px;
-    }
-  
-    .tags {
-      display: flex;
-      padding-bottom: 15px;
-  
-      p{
-        text-transform: uppercase;
-        padding: 0;
-        padding-right: 30px;
-        font-family: 'Novecento';
-        font-size: 16px;
-  
-        span {
-          color: #607977;
-        }
-      }
-    }
-  
-    .comments-area {
-      padding-top: 20px;
-    }
-  
-    h2 {
-      font-size: 25px;
-    }
-  
-    .avatar.avatar-50.photo {
-      border-radius: 50%;
-    }
-  
-    .comment-reply-title {
-      font-size: 25px;
-      padding-top: 20px;
-    }
-  
-    .logged-in-as {
-      display: none;
-    }
-  
-    small {
-      display: none;
-    }
-  
-    .form-submit #submit {
-      font-size: 12px;
-      color: white;
-      background-color: #248a83;
-      padding: 0px 15px;
-      width: 10%;
-    }
-  
+  img{
+    width: 1200px;
+    margin: auto;
+    margin-top: -85px;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px;
   }
-  .product-type-header{
-      margin-top: 30px;  
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  }
-.journal-posts-grid{
-display: flex;
-justify-content: space-between;
- 
-}
-
-/**********Adventure archive **********/
-
-.adventures-title h1{
-text-align: center;
-font-size: 16px;
-text-transform: uppercase;
-
-}
 
 .journal-posts{
-  border: 1px solid red;
 
+  width: 800px;
+  margin: auto;
+  h2{
+    margin: 10px 0 10px 0;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family:'Novecento-bold' ;
+    
+
+  }
+  .text-adventure{
+  
+    h3{
+      text-transform: uppercase;
+      font-family:'Novecento' ;
+    }
+    p{
+      margin: 10px 0 10px 0;
+      font-size: 16px;
+      font-family: 'Merriweather-Light';
+    }
+    button{
+      width: 90px;
+      height: 30px;
+      background: none;
+      font-family: 'Novecento-bold';
+    }
+  }
+  
+}}
+.menu2{
+  position: relative;
 }

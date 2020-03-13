@@ -2,7 +2,7 @@
 
 <div class="journal-posts-grid">
 
-<section class="journal-posts">
+
 
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
@@ -10,25 +10,25 @@
         the_post(); ?>
     
     <div class="photo-text">
-       <!-- <h2><?php the_title(); ?></h2>  -->
         <?php the_post_thumbnail('large');?> 
     </div>
-    
+    <section class="journal-posts">
+       <h2><?php the_title(); ?></h2> 
     <?php the_content(); ?>
-<!-- 
+
     <div class="tags">
-    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i>
+    <!-- <p>Posted in <i class="fas fa-long-arrow-alt-right"></i> -->
         <?php foreach ( get_the_category() as $category ):?> 
         <span><?php echo $category->name;?></span> 
         <?php endforeach;?>
     </p>
-    
-    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i>
+<!--     
+    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i> -->
         <?php foreach ( get_the_tags() as $tag ):?> 
         <span><?php echo $tag->name;?></span>
         <?php endforeach;?>
     </p>
-    </div> -->
+    </div> 
 
     <button><i class="fab fa-facebook-f"></i> Like</button>
     <button><i class="fab fa-twitter"></i> Tweet</button>
