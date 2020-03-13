@@ -14,9 +14,11 @@
             <h2> <?php strtoupper( the_title()); ?></h2> 
             <p class="price-text" ><?php echo "$" . get_field('price');?></p> 
             <?php the_content(); ?>
-            <div><button class="social-button"><i class="fab fa-facebook-f"></i> LIKE </button>
-              <button class="social-button"><i class="fab fa-pinterest"></i> PIN </button>
-               <button class="social-button"> <i class="fab fa-twitter"></i> TWEET </button>
+            <div class="social-button">
+                <button><i class="fab fa-facebook-f"></i> LIKE </button>
+                <button> <i class="fab fa-twitter"></i> TWEET </button>
+                <button><i class="fab fa-pinterest"></i> PIN </button>
+              
         </div>
     </section>
     
@@ -31,5 +33,5 @@
 <?php endif;?>
 
     
-w
+
 <?php get_footer();?>

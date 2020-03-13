@@ -636,6 +636,50 @@ form label {
   margin: 10px;
   text-decoration: none; }
 
+/****** eat taxonomy ****/
+.product-type-header h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 5px;
+  font-family: 'Novecento-bold'; }
+
+.product-type-header p {
+  font-family: 'Merriweather-Light'; }
+
+/**** single product ******/
+.single-product-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 1100px;
+  margin: auto; }
+  .single-product-page img {
+    width: 600px;
+    height: 400px; }
+  .single-product-page .single-product-info {
+    width: 100%;
+    padding: 10px; }
+    .single-product-page .single-product-info h2 {
+      font-size: 30px;
+      color: #d99054;
+      text-transform: uppercase;
+      font-family: 'Novecento-bold'; }
+    .single-product-page .single-product-info .price-text {
+      font-family: 'Novecento';
+      margin: 10px 0px 10px 0px;
+      font-size: 20px; }
+    .single-product-page .single-product-info p {
+      font-family: 'Merriweather-Light'; }
+    .single-product-page .single-product-info .social-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .single-product-page .single-product-info .social-button button {
+        background: none;
+        margin: 5px;
+        width: 80px;
+        height: 30px;
+        font-family: 'Novecento-bold'; }
+
 .error-page {
   display: grid;
   grid-template-columns: 2fr 1fr; }
