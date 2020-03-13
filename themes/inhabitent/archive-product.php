@@ -1,8 +1,9 @@
 <?php get_header(); ?>
-
+<hr class="dotted">
 
 <h1 class="shop-title2">Shop stuff</h1>
-<hr class="dashed">
+
+
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -24,7 +25,7 @@ $phrase  = $term->slug;
 <?php endforeach;?>
 
 </div>
-
+<hr class="dashed">
 
 
 <section class= "taxonomy-products-grid">
@@ -43,8 +44,8 @@ $phrase  = $term->slug;
 
     <div class="grey-space"></div>
 
-    <figcaption>
-        <hr class="dotted">
+    <div class="product-info">
+        
     
     
         <p><?php the_title();?></p>
@@ -54,7 +55,7 @@ $phrase  = $term->slug;
     </a>
         
         
-    </figcaption>
+    </div>
    
     </figure>  
       
